@@ -33,6 +33,16 @@ Backend napisany jest w  JavaScript Frontend wykorzystuje CSS oraz HTML.
 Backend is written in JavaScript,  frontend uses CSS and HTML.
 
 Biblioteki: 
-- Socket.io
-- SweetAlerts
-- 
+- Socket.io:  https://socket.io/docs/v4/
+- SweetAlerts: https://sweetalert2.github.io/
+  
+Dependencies:
+- Socket.io:  https://socket.io/docs/v4/
+- SweetAlerts: https://sweetalert2.github.io/
+
+Build Instructions:
+
+1) Clone repo
+2) ``` npm install ```
+3) ``` npm run build ```
+4) ``` npm start ``` or start from builded package
