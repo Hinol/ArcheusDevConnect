@@ -2,7 +2,7 @@
 
 ![icon](https://github.com/Hinol/ArcheusDevConnect/assets/146633504/98a6ad4d-75ce-44c5-b593-866cd20a63c8)
 
-
+**Download fully builded application: https://drive.google.com/file/d/1HnkFgJ1SWeueLqywYY6AKFtjDkRIviXk/view**
 
  PL: {
 
