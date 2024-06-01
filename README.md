@@ -8,7 +8,6 @@
 
 ArcheusDevConnect to narzędzia stworzone z myślą o web developerach. Aplikacja zawiera:
 
-- Devchat
 - HTTP Requests
 - IP Checker
   
@@ -20,7 +19,6 @@ ArcheusDevConnect to narzędzia stworzone z myślą o web developerach. Aplikacj
  ArcheusDevConnect 
   ArcheusDevConnect is a tool designed for web developers. The application includes:
 
-  - Devchat
   - HTTP Requests
   - IP Checker
     
@@ -39,11 +37,9 @@ https://discord.com/users/919555986577039361/**
 https://discord.com/users/919555986577039361/**
 
 Biblioteki: 
-- Socket.io:  https://socket.io/docs/v4/
 - SweetAlerts: https://sweetalert2.github.io/
   
 Dependencies:
-- Socket.io:  https://socket.io/docs/v4/
 - SweetAlerts: https://sweetalert2.github.io/
 
 Build Instructions:
