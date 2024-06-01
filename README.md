@@ -51,6 +51,3 @@ Build Instructions:
 
 
 
-**Socket ustawiasz w pliku chat.js tutaj link do repo z socketem: https://github.com/Hinol/ArcheusDevConnectAPI**
-
-**Socket you can set in chat.js file here link to repo with socket: https://github.com/Hinol/ArcheusDevConnectAPI**
