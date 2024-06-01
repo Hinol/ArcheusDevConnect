@@ -8,7 +8,7 @@
 
 ArcheusDevConnect to narzędzia stworzone z myślą o web developerach. Aplikacja zawiera:
 
-- HTTP Requests
+- HTTP Requests Tester
 - IP Checker
   
 }
@@ -19,7 +19,7 @@ ArcheusDevConnect to narzędzia stworzone z myślą o web developerach. Aplikacj
  ArcheusDevConnect 
   ArcheusDevConnect is a tool designed for web developers. The application includes:
 
-  - HTTP Requests
+  - HTTP Requests Tester
   - IP Checker
     
  }    
