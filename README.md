@@ -9,7 +9,7 @@
 ArcheusDevConnect to narzędzia stworzone z myślą o web developerach. Aplikacja zawiera:
 
 - Devchat
-- Http requests tester
+- HTTP Requests
 - IP Checker
   
 }
@@ -25,3 +25,14 @@ ArcheusDevConnect to narzędzia stworzone z myślą o web developerach. Aplikacj
   - IP Checker
     
  }    
+
+
+
+Backend napisany jest w  JavaScript Frontend wykorzystuje CSS oraz HTML.
+
+Backend is written in JavaScript,  frontend uses CSS and HTML.
+
+Biblioteki: 
+- Socket.io
+- SweetAlerts
+- 
