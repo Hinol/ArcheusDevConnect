@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202020;
+    height: 100vh;
+    margin: 0; /* Usunięcie domyślnych marginesów */
+    overflow: hidden; /* Zapobieganie przewijaniu strony */
+}
+
+.container-requests {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow-y: auto; 
+}
+
+.container-requests h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-requests label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container-requests input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.container-requests button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5703dd;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container-requests button:hover {
+    background-color: #5703dd;
+}
+
+
+.pre-response{
+    color: white;
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #252424;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.button-container {
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    transform: translate(-50%);
+    display: flex;
+    background-color: #5703dd;
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+          rgba(123, 46, 247, 0.5) 5px 10px 15px;
+}
+
+.button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.loading {
+    position: fixed; /* Zapewnia, że element zajmuje cały ekran */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+    display: flex; /* Umożliwia centrowanie zawartości */
+    align-items: center; /* Centrowanie w pionie */
+    justify-content: center; /* Centrowanie w poziomie */
+    z-index: 9999; /* Zapewnia, że element jest na wierzchu */
+}
+
+.loading svg polyline {
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.loading svg polyline#back {
+    fill: none;
+    stroke: #5703dd4b;
+}
+
+.loading svg polyline#front {
+    fill: none;
+    stroke: #5703dd;
+    stroke-dasharray: 48, 144;
+    stroke-dashoffset: 192;
+    animation: dash_682 1.4s linear infinite;
+}
+
+@keyframes dash_682 {
+    72.5% {
+        opacity: 0;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.refreshbtn {
+    border: none;
+    background-color: #0057b300;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    cursor: pointer;
+    transition: transform 0.5s; 
+}
+
+.refreshbtn:hover {
+    transform: translate(-50%, -100%) rotate(360deg); 
+}
+
+
+.ip-lookup{
+    background-color: #252424;
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ip-lookup h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.ip-lookup button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    color: white;
+    font-weight: 800;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: #5703dd;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
