@@ -8,12 +8,12 @@ function hideLoading() {
 
 document.addEventListener('DOMContentLoaded', async () => {
   const socket = await new io('http://localhost:3000');
-  showLoading()
-  const chatInput = document.getElementById('chatinput');
-  const sendMsgBtn = document.getElementById('sendmsgbtn');
+  showLoading();
+  const chatInput = document.getElementById('chatInput');
+  const sendMsgBtn = document.getElementById('sendMsgBtn');
   const container = document.getElementById('container');
   const userId = localStorage.getItem('user');
-  const homeBtn = document.getElementById('home')
+  const homeBtn = document.getElementById('home');
   socket.emit('status');
   
   socket.on('status', (status) => {
@@ -28,17 +28,19 @@ document.addEventListener('DOMContentLoaded', async () => {
       });
     }
   });
-  hideLoading()
+  
+  hideLoading();
+  
   socket.on('messages', (messages) => {
     messages.forEach((message) => {
-      const newmsg = container.cloneNode(true);
-      newmsg.innerHTML = `
+      const newMsg = container.cloneNode(true);
+      newMsg.innerHTML = `
         <h1>${message.userId}</h1>
         <p>${message.message}</p>
-        <span class="time-right">${message.timestamp}</span>
+        <span class="timeRight">${message.timestamp}</span>
       `;
-      newmsg.style.display = 'block'; 
-      container.parentNode.appendChild(newmsg);
+      newMsg.style.display = 'block'; 
+      container.parentNode.appendChild(newMsg);
     });
     Swal.fire({
       title: 'Chat',
@@ -64,19 +66,20 @@ document.addEventListener('DOMContentLoaded', async () => {
       socket.emit('message', data);
       chatInput.value = "";
   
-      const newmsg = container.cloneNode(true);
-      newmsg.innerHTML = `
+      const newMsg = container.cloneNode(true);
+      newMsg.innerHTML = `
         <h1>${data.userId}</h1>
         <p>${data.message}</p>
-        <span class="time-right">${data.timestamp}</span>
+        <span class="timeRight">${data.timestamp}</span>
       `;
-      newmsg.style.display = 'block'; 
-      container.parentNode.appendChild(newmsg);
+      newMsg.style.display = 'block'; 
+      container.parentNode.appendChild(newMsg);
     }
   });
+  
   homeBtn.addEventListener('click', () => {
-    window.location.replace('index.html')
-  })
+    window.location.replace('index.html');
+  });
   
   socket.on('message', (data) => {
     let formattedMessage = data.message;
@@ -84,13 +87,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       formattedMessage = `<code>${data.message.substring(3)}</code>`;
     }
     
-    const newmsg = container.cloneNode(true);
-    newmsg.innerHTML = `
+    const newMsg = container.cloneNode(true);
+    newMsg.innerHTML = `
       <h1>${data.userId}</h1>
       <p>${formattedMessage}</p>
-      <span class="time-right">${data.timestamp}</span>
+      <span class="timeRight">${data.timestamp}</span>
     `;
-    newmsg.style.display = 'block'; 
-    container.parentNode.appendChild(newmsg);
+    newMsg.style.display = 'block'; 
+    container.parentNode.appendChild(newMsg);
   });
 });
