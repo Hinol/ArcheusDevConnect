@@ -101,9 +101,6 @@ document.getElementById('infobtn').addEventListener('click', function () {
     window.location.replace('info.html');
 });
 
-document.getElementById('chatbtn').addEventListener('click', function () {
-    window.location.replace('chat.html');
-});
 
 document.addEventListener('DOMContentLoaded', async () => {
     if (localStorage.getItem('user')) {
