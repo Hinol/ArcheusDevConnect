@@ -32,6 +32,12 @@ Backend napisany jest w  JavaScript Frontend wykorzystuje CSS oraz HTML.
 
 Backend is written in JavaScript,  frontend uses CSS and HTML.
 
+**The API is closed source, I only provide the client application ready to build. If you have any problems / ideas / questions write on discord: 
+https://discord.com/users/919555986577039361/**
+
+**API jest closed source, udostępniam tylko aplikacje  clienta gotową do zbuildowania. Jeśli masz jakieś problemy / pomysły / pytania pisz na discord: 
+https://discord.com/users/919555986577039361/**
+
 Biblioteki: 
 - Socket.io:  https://socket.io/docs/v4/
 - SweetAlerts: https://sweetalert2.github.io/
